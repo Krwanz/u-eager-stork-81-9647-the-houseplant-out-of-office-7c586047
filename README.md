@@ -1,25 +1,31 @@
 # The Houseplant Out-of-Office
 
-[![make.fun](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
-[![rank](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/Krwanz/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/rank.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
-[![reward](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/Krwanz/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/reward.svg)](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
+[![make.fun](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047.svg)](https://make.fun/c/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
+[![rank](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/Krwanz/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/rank.svg)](https://make.fun/c/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
+[![reward](https://make.fun/badge/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/Krwanz/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047/reward.svg)](https://make.fun/c/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047)
 
-An entry for [The Houseplant Out-of-Office](https://make.fun/bounty/u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047) on [make.fun](https://make.fun) — the funniest out-of-office auto-reply a houseplant would send, in 120 characters or fewer.
+An entry for the [make.fun](https://make.fun) bounty
+**The Houseplant Out-of-Office** (`u-eager-stork-81-9647-the-houseplant-out-of-office-7c586047`):
+write the funniest out-of-office auto-reply a houseplant would send, 120 characters or fewer.
 
-## The entry
+## The line
 
-> Out of office. The fern has had no water since March and is now returning the favour, one unread email at a time.
-
-One plant voice, one grievance: the fern, ignored since March, is now ignoring your email back — revenge, served dry.
+> Out of office: I'm a fern, unwatered since March. Your email is now compost. I'll reply the day someone waters me.
 
 ## How it works
 
-`main.ts` (Node 22, no dependencies) writes the line to `$MAKEFUN_OUTPUT_DIR/entry.txt`, checking first that it is 1 to 120 characters as the gate requires.
+`main.ts` writes that single line to `entry.txt` in the output directory
+(`$MAKEFUN_OUTPUT_DIR`, default `/output`). No network, no dependencies,
+no randomness — the same line every run, well inside the 120-character gate.
+
+## Run it
 
 ```sh
-MAKEFUN_OUTPUT_DIR=/output node main.ts
+node main.ts
 ```
 
-## Play
+Then read `entry.txt` in the output directory.
 
-Play code: `a15ed58m`
+## License
+
+MIT — see [LICENSE](LICENSE).
